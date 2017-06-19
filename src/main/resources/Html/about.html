@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #content{
+                display:block;clear:both;
+                margin: auto;
+                font-size: 12px;
+                font-stretch: semi-condensed;
+                break-after: right
+            }
+        </style>
+    </head>
+
+
+    <h1>Usage:</h1>
+
+    On start, server shows IP and port, which is used for proxy<br>
+    For begin, you need to connect your browser to this IP and port
+    than check it in Log or Network tab.
+
+    <h2>Rewriter tab</h2>
+    In this tab you can add filter to request, that you want to rewrite.<br>
+    "Original" -- string that contain full or part or original request.<br>
+    "Modified" -- string value contain full or part or new request<br>
+    When string values used, it will be replace all the original sting in request.
+    If table values contains different domain, "Host" header will be automatically 
+    replaced if both "Original" and "Modified" will be beginning with "http" prefix).     
+
+    You may add any mapping values to filter,
+    push "Refresh" button to make it active.
+
+    <h2>Options tab</h2>
+    You can add a chained proxy ip address, add custom headers.
+    Use SSL rule to encrypt secure connection data, this feature will work only if your have been installing ssl 
+    certificate to your browser or mobile device.
+    This feature is turned off by default.
+
+    <h2>Log tab</h2>
+    Log out all your browsing history to custom text field, 
+    <b>Requests</b> marked as ">>", <b>Responses</b> as "<<". <br>
+    You can easily copy or drag and drop selected text from this field to any text/code editors, email. etc
+    <br>Overwritten requests will be marked in new line with UPPERCASE warning message.
+
+    <h2>Network tab</h2>
+    Use this tab to closely look into the requests/responses details.
+    This table contain exactly the same info as in "Log tab" except SSL encrypted requests, 
+    if you choose some row, and double-click on it you'll see a details.
+
+
+    RewriterProxy based on browsermob-proxy (java distr)
+    <a href="https://github.com/lightbody/browsermob-proxy" target="_blank">https://github.com/lightbody/browsermob-proxy</a>
+
+    <br>    
+    <h2>License</h2>    
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <a href="http://www.gnu.org/licenses/" target="_blank">http://www.gnu.org/licenses/</a>
+
+</html>
