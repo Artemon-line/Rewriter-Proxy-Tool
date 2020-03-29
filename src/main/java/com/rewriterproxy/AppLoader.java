@@ -3,6 +3,7 @@ package com.rewriterproxy;
 import com.rewriterproxy.Controller.ProxyController;
 import com.rewriterproxy.Model.ProxyModel;
 import com.rewriterproxy.View.View;
+
 import java.io.IOException;
 import java.net.UnknownHostException;
 import java.util.Arrays;
